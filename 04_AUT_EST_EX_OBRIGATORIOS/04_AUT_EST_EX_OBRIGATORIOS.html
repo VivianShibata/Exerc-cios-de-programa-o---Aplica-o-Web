@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Matemática e Física</title>
+</head>
+<body>
+    <h1>LANÇAMENTO VERTICAL</h1>
+    <h3>Por favor insira um valor para a velocidade inicial, para poder calcular a altura máxima (em metros) e o tempo total de subida do objeto (em segundos).</h3>
+    <form name="form1" method="get">
+        valor: <input type="number" name="v1" id="v1" value="v1">
+        <input type="button" name="button" value="calcular" onclick="lancamento_vertical();">
+        <div id="saida">Tempo (em segundos)</div>
+        <div id="saida1">altura máxima (em metros)</div>
+        </form>
+        
+    <br>
+    <br>
+    <h1>PONTO DE MÁXIMO/MÍNIMO</h1>
+    <p>Por favor insira um valor para <strong>a</strong>, <strong>b</strong> e <strong>c</strong>, para encontrar o ponto máximo ou mínimo de uma função do 2º grau.</p>
+    <form action="MaxMin">
+        a: <input type="number" name="a" id="a" value="a">
+        b: <input type="number" name="b" id="b" value="b">
+        c: <input type="number" name="c" id="c" value="c">
+        <input type="button" name="button" value="calcular" onclick="ponto_max_min ();">
+        <div id="PMax">X do vértice</div>
+        <div id="PMin">Y do vértice</div>
+    </form>
+   
+    <br>
+    <br>
+    <h1>TEMPERATURA</h1>
+    <h3>Conversão de Celsius para Fahrenheit</h3>
+    <form action="Celsius / Fahrenheit">
+        Temperatura: <input type="number" name="t" id="t" value="t">
+        <select name="select">
+            <option type = "boolean" id="C"> Celsius</option>
+            <option type = "boolean" id="F" selected>Fahrenheit</option>
+          </select>
+        <input type="button" name="button" value="calcular" onclick="temperatura ();">
+        <div id="temp">Temperatura</div>
+    </form>
+
+    <br>
+    <br>
+    <h1>CONSUMO DE ENERGIA</h1>
+    <h3>Calcular a conta de consumo de energia elétrica de uma casa</h3>
+    <form action="CONSUMO DE ENERGIA">
+        quantidade de Kwh consumidos: <input type="number" name="e" id="e" value="e"> <br>
+        valor unitário do Kwh: <input type="number" name="tempo" id="tempo" value="tempo">
+        <input type="button" name="button" value="calcular" onclick="Energy ();">
+        <div id="consumo">Preço final</div>
+    </form>
+    <br>
+    <br>
+    <br>
+    
+    <script src="04_AUT_EST_EX_OBRIGATORIOS.js"></script>
+
+</body>
+</html>
